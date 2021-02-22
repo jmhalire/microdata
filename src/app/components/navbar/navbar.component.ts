@@ -13,7 +13,7 @@ export class NavbarComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.stateSidenav = false;
+    this.stateSidenav = true;
     this.sidenav();
   }
 
