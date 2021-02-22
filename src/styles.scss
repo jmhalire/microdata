@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    background: #004774;
+    background: -moz-linear-gradient(
+      18deg,
+      rgba(0, 90, 145, 1) 33%,
+      rgba(46, 157, 73, 1) 83%
+    );
+    background: -webkit-linear-gradient(
+      18deg,
+      rgba(0, 90, 145, 1) 33%,
+      rgba(46, 157, 73, 1) 83%
+    );
+    background: linear-gradient(
+      18deg,
+      rgba(0, 90, 145, 1) 33%,
+      rgba(46, 157, 73, 1) 83%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#005a91",endColorstr="#2e9d49",GradientType=1);
+    min-height: 700px;
+}
+section{
+  font-size: 20px;
+}

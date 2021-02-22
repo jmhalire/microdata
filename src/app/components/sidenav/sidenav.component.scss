@@ -1,0 +1,81 @@
+.sidenav {
+  position: fixed;
+  z-index: 999;
+  cursor: pointer;
+  padding: 30px 0px 3rem 0px;
+  contain: content;
+  height: 95%;
+  overflow-y: auto;
+  top: 45px;
+  left: 0;
+  box-shadow: 0.1rem 0.1rem 0.1rem #0000006b;
+  background: #fff;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  padding: 0px 0px 0px 0.7em;
+  min-height: 3.5rem;
+  border-radius: 10px;
+  color: #004774;
+  &.active {
+    background: #004774;
+    & > svg,
+    label {
+      color: #fff !important;
+      cursor: pointer;
+    }
+  }
+
+  &:hover {
+    background-color: #0048748f;
+    & > svg,
+    label {
+      //color: rgb(29, 29, 29)!important;
+      cursor: pointer;
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+//trasladar y mostrar nombre de la lista de links
+.show-label {
+  transition: 0.5s;
+  will-change: scroll-position; //Le dice al navegador que optimice la posición de desplazamiento del elemento,
+  //ya que podría cambiar en el futuro.
+}
+
+.hidden-label {
+  transform: translateX(-150px);
+  opacity: 0;
+  transition: 0.6s;
+  will-change: scroll-position;
+}
+
+.icon-rotate {
+  transform: rotateZ(90deg);
+  transition: 0.4s;
+}
+
+svg {
+  font-size: 18px !important;
+}
+label {
+  font-size: 18px;
+  text-transform: uppercase;
+  //white-space: pre; //para mantener un texto en una sola linea (no salto de linea)
+}
+
+span {
+  min-width: 240px;
+}
+
+/* dropdown 1*/

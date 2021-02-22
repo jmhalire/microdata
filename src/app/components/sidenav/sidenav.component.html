@@ -1,0 +1,9 @@
+<div class="sidenav" [@sidenav]="stateSidenav ? 'open' : 'closed'">
+    <ul class="navbar-nav" style="width: fit-content;">
+      <li class="nav-item my-1" routerLinkActive="active" *ngFor="let link of sidenavLink" [routerLink]="[link.url]">
+        <i [ngClass]="link.classElement" aria-hidden="true"></i>
+        <label [ngClass]="stateSidenav ? 'show-label' : 'hidden-label'">{{link.nameLink}}</label>
+      </li>
+    </ul>
+  </div>
+  
